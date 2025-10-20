@@ -6,14 +6,18 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "cls && nodemon server.js",
-    "studio": "npx prisma studio"
+    "studio": "npx prisma studio",
+    "seed": "node prisma/seed.js"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
   },
   "keywords": [
     "SENAI"
   ],
   "author": "Bianca",
   "license": "MIT",
-  "description": "SENAI Harry Potter",
+  "description": "SENAI comidas db",
   "dependencies": {
     "@prisma/client": "^6.16.3",
     "dotenv": "^17.2.3",
