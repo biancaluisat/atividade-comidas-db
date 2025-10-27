@@ -1,9 +1,12 @@
 import { Router } from "express";
-import * as ComidaController from './../controllers/comidasController.js';
+import * as ComidasController from './../controllers/comidasController.js';
 
 const router = Router();
 
-router.get("/", ComidaController.listarTodos);
-router.get("/:id", ComidaController.listarUm);
+router.get("/", ComidasController.listarTodos);
+router.get("/:id", ComidasController.listarUm);
+router.post("/", ComidasController.criar);
+router.delete("/:id", ComidasController.deletar);
+router.put("/:id", ComidasController.atualizar);
 
 export default router;
